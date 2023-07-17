@@ -1,0 +1,90 @@
+/*body*/
+/*{*/
+/*    margin: 0;*/
+/*    height: 100vh;*/
+/*    font-family: Montserrat, sans-serif;*/
+/*    overflow: hidden;*/
+/*}*/
+#slick
+{
+    padding: 0;
+    margin: 0;
+    height: 150vh;
+    font-family: Montserrat, sans-serif;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+
+}
+.slick{
+    background-color: white;
+    height: 150vh;
+}
+
+
+#habout
+{
+    font-size: 5em;
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    opacity: 0;
+    z-index: 2;
+
+}
+.headin{
+    font-size: 1.5em;
+    position: absolute;
+    top: 38%;
+    left: 12%;
+    opacity: 0;
+    z-index: 2;
+    font-style: oblique;
+    overflow: hidden;
+}
+
+.headin ul li
+{
+    margin: 5px;
+}
+@media screen and (max-width: 480px) {
+    /* Your styles for mobile devices */
+
+    /* Reduce the font size */
+    .headin {
+        font-size: 1.2em;
+    }
+    #slick{
+        word-wrap: break-word;
+        overflow: visible;
+        height: 110vh;
+
+    }
+
+    /* Center the heading */
+    #habout {
+        bottom: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 799px){
+    /* Your styles for tablets */
+
+    /* Reduce the font size */
+    .headin {
+        font-size: 1.2em;
+    }
+    #slick{
+        word-wrap: break-word;
+        overflow: visible;
+        height: 80vh;
+    }
+
+    /* Center the heading */
+    #habout {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
