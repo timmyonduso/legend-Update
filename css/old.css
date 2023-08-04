@@ -1,4 +1,5 @@
 .swiper {
+    min-height: 300px;
     width: 100%;
     height: auto;
 }
@@ -13,8 +14,9 @@
      background-position: center;
      flex-direction: column;
      align-items: center;justify-content: center;text-align: center;
-     max-height: 90vh;
+     /*max-height: 90vh;*/
      width: 100%;
+     height: auto;
  }
 .slide-caption {
     position: absolute;
@@ -40,8 +42,17 @@
 }
 @media screen and (max-width: 400px)
 {
-    .slide-caption{
+    .swiper-slide {
+        height: auto; /* Allow the slide container to adjust its height based on content */
+    }
+
+    .swiper {
+        min-height: auto; /* Remove the minimum height for responsiveness */
+    }
+
+    .slide-caption {
         font-size: 10px;
+        bottom: 10px;
 
     }
 }

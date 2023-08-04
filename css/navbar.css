@@ -54,7 +54,11 @@ body {
 
 .navbar-links {
     height: 100%;
-    margin-left: 40vh;
+    font-size: 1em;
+    display: flex;
+    gap: 3rem;
+    margin-left: 50vh;
+    font-weight: bold;
 
 }
 
@@ -130,6 +134,7 @@ body {
 
     .navbar-links {
         display: none;
+        margin-left: 0;
         width: 100%;
     }
 
@@ -148,5 +153,6 @@ body {
 
     .navbar-links.active {
         display: flex;
+
     }
 }

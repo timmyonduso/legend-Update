@@ -45,6 +45,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="/dist/style2.css" rel="stylesheet">
   <link rel="stylesheet" href="css/old.css">
+  <link rel="stylesheet" type="text/css" href="css%2022/style.css">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
 
@@ -55,37 +57,85 @@
 
 <!---->
 <!-- ======= Header ======= -->
-<header id="header">
-  <div class="navbar-new">
-    <div class="logo"><a style="font-style: oblique" href="#">Chaspot</a></div>
-    <ul class="new-nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <a href="" class="action_btn">Get Started</a>
-    <div class="toggle_btn">
-      <i class="fa-solid fa-bars"></i>
-    </div>
+<header class="bg-dark" >
+  <div class="utility-nav d-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <p class="small">
+            <i class="bx bx-envelope"></i>
+            <a href="mailto:director@chaspotinternational.org">director@chaspotinternational.org</a>
 
-    <div class="dropdown_menu open">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a>
-          <ul>
-            <li><a href="#">Research and Evaluation</a></li>
-            <li><a href="#">Strategic Business Development</a></li>
-            <li><a href="#">Data management</a></li>
-            <li><a href="#">Advocacy and Networking </a></li>
-          </ul>
-        </li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#" class="action_btn">Get Started</a></li>
-      </ul>
+            <i class="bx bx-phone" style="margin-left: 30px;"></i>
+            <a href="tel:+254723224830">+254723224830</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent main-menu" style="box-shadow:none">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        <p>Chaspot</p>
+        <!--        <img src="img/Anlogo.jpeg" alt="" style="display: flex; width: 100px; height: 100px;">-->
+      </a>
+
+      <div class="collapse navbar-collapse">
+        <!--        <form id="search-form" class="form-inline my-2 my-lg-0 mx-auto">-->
+        <!--          <input type="text" name="text" class="input" placeholder="Search keywords">-->
+        <!--          <button class="btn btn-success my-2 my-sm-0" type="submit"><i class="bx bx-search"></i></button>-->
+        <!--        </form>-->
+        <div>
+          <button class="btn btn-primary"><i class="bx bxs-user-circle mr-1"></i>Get in touch</button>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent sub-menu">
+    <div class="container">
+      <div class="navbar-links">
+        <ul class="navbar-nav mx auto text-white">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="talk.php">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--  <div class="search-bar d-block d-md-none">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-12">-->
+<!--          <form class="form-inline mb-3 mx-auto">-->
+<!--            <input class="form-control" type="search" placeholder="Search for products..." aria-label="Search">-->
+<!--            <button class="btn btn-success" type="submit"><i class="bx bx-search"></i></button>-->
+<!--          </form>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
 </header>
 <!-- End Header -->
 
@@ -93,87 +143,34 @@
 
 <div class="full-container">
   <div class="hero-section">
-    <div class="container-hero">
-      <ul>
-        <li>
-          <input type="radio" checked="checked" name="slide">
-          <div class="slide">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img class="" src="assets/img/sangga-rima-roman-selia-O3nVHiO14s4-unsplash.jpg" alt="">
+          <div class="slide-caption">Chaspot International is a knowledge management solutions provider
+            that aims to become a leading firm in its field. </div>
+        </div>
+        <div class="swiper-slide" >
+          <img src="assets/img/karsten-wurth-0w-uTa0Xz7w-unsplash.jpg" alt="">
+          <div class="slide-caption">Founded in 2019, Chaspot International sets out to be a leading firm in providing solutions in knowledge management to our clients in Africa and beyond.
+            The company has diverse expertise in capacity development and engages clients in both the public and private sector.
+            Registered in Nairobi, Kenya, the company integrates a network of international experts in implementing context-specific services in Africa and beyond.</div>
+        </div>
+      </div>
 
-            <img src="assets/img/hero-1.jpg" alt="slide one">
-            <div class="content">
-              <h2>Slide One</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga cum esse aliquam quibusdam facere sunt reiciendis atque ab dolore, eius similique dolor error nostrum placeat voluptatum quis, porro dolorem sit sint! Ipsam inventore, eveniet ad rerum dignissimos obcaecati at animi maxime sint optio. Aut quibusdam doloribus, suscipit excepturi obcaecati debitis, nisi consectetur, architecto nobis accusantium consequuntur natus veritatis sunt iusto ullam ipsam commodi tempora, corrupti laborum cum?</p>
-            </div>
+      <!-- If we need pagination -->
+      <!--    <div class="swiper-pagination"></div>-->
 
-          </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
-        </li>
-        <li>
-          <input type="radio" name="slide">
-          <div class="slide">
-
-
-            <img src="assets/img/hero-2.jpg" alt="slide two">
-            <div class="content color-change-2x">
-              <h2>Slide Two</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga cum esse aliquam quibusdam facere sunt reiciendis atque ab dolore, eius similique dolor error nostrum placeat voluptatum quis, porro dolorem sit sint! Ipsam inventore, eveniet ad rerum dignissimos obcaecati at animi maxime sint optio. Aut quibusdam doloribus, suscipit excepturi obcaecati debitis, nisi consectetur, architecto nobis accusantium consequuntur natus veritatis sunt iusto ullam ipsam commodi tempora, corrupti laborum cum?</p>
-            </div>
-
-          </div>
-
-        </li>
-
-
-        <li>
-          <input type="radio" name="slide">
-          <div class="slide">
-
-
-            <img src="assets/img/sangga-rima-roman-selia-O3nVHiO14s4-unsplash.jpg" alt="slide three">
-            <div class="content color-change-2x">
-              <h2>Slide Three</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga cum esse aliquam quibusdam facere sunt reiciendis atque ab dolore, eius similique dolor error nostrum placeat voluptatum quis, porro dolorem sit sint! Ipsam inventore, eveniet ad rerum dignissimos obcaecati at animi maxime sint optio. Aut quibusdam doloribus, suscipit excepturi obcaecati debitis, nisi consectetur, architecto nobis accusantium consequuntur natus veritatis sunt iusto ullam ipsam commodi tempora, corrupti laborum cum?</p>
-            </div>
-
-          </div>
-
-        </li>
-
-        <li>
-          <input type="radio" name="slide">
-          <div class="slide">
-
-
-            <img src="assets/img/hero-1.jpg" alt="slide four">
-            <div class="content color-change-2x">
-              <h2>Slide Four</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga cum esse aliquam quibusdam facere sunt re
-
-                iciendis atque ab dolore, eius similique dolor error nostrum placeat voluptatum quis, porro dolorem sit sint! Ipsam inventore, eveniet ad rerum dignissimos obcaecati at animi maxime sint optio. Aut quibusdam doloribus, suscipit excepturi obcaecati debitis, nisi consectetur, architecto nobis accusantium consequuntur natus veritatis sunt iusto ullam ipsam commodi tempora, corrupti laborum cum?</p>
-            </div>
-
-          </div>
-
-        </li>
-
-        <li>
-          <input type="radio" name="slide">
-          <div class="slide">
-
-
-            <img src="assets/img/hero-1.jpg" alt="slide five">
-            <div class="content color-change-2x">
-              <h2>Slide Five</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga cum esse aliquam quibusdam facere sunt reiciendis atque ab dolore, eius similique dolor error nostrum placeat voluptatum quis, porro dolorem sit sint! Ipsam inventore, eveniet ad rerum dignissimos obcaecati at animi maxime sint optio. Aut quibusdam doloribus, suscipit excepturi obcaecati debitis, nisi consectetur, architecto nobis accusantium consequuntur natus veritatis sunt iusto ullam ipsam commodi tempora, corrupti laborum cum?</p>
-            </div>
-
-          </div>
-
-        </li>
-
-
-      </ul>
+      <!-- If we need scrollbar -->
+      <!--    <div class="swiper-scrollbar"></div>-->
     </div>
+
   </div>
 
 <!--          <div class="container position-relative" data-aos="fade-left" data-aos-delay="100">-->
@@ -219,57 +216,104 @@
         </ul>
       </div>
 
-    </section><!-- End About Section -->
+    </section>
+
+    <!-- End About Section -->
 
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
       <div class="container" data-aos="fade-up">
 
-        <div class="row">
-          <div class="col-lg-4 d-flex align-items-stretch">
-            <div class="content">
-              <h3>Our Core values</h3>
-              <p>
-                We believe in treating our customers with respect and faith.
-                <br>We grow through creativity and innovativeness. Honesty Integrity and .
-              </p>
-              <div class="text-center">
-                <a href="about.html" class="more-btn">Our Services and Products <i class="bx bx-chevron-right"></i></a>
+        <div class="flip-main">
+          <div class="container">
+            <div class="row">
+
+              <!-- flip card start -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h3>Our Core values</h3>
+                    <p>
+                      We believe in treating our customers with respect and faith.
+                      <br>We grow through creativity and innovativeness. <br> Honesty, integrity,
+                      and transparency are the cornerstones of our business values.
+                    </p>
+                  </div>
+                  <div class="flip-card-back">
+                    <div class="text">
+                      <div class="text-center">
+                        <a href="about.html" class="more-btn">Our Services and Products <i class="bx bx-chevron-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-boxes d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
+              <!-- flip card end -->
+
+              <!-- flip card start -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front icon-box">
                     <i class="bx bxs-cube-alt"></i>
                     <h4>Create a long term relationship with our clients </h4>
-                    <p>Maintain a professional relationship with our clients</p>
                   </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-receipt"></i>
-                    <h4>Provide high quality services</h4>
-                    <p>Achieve complete customer satisfaction</p>
-                  </div>
-                </div>
-                <div class="col-xl-4 d-flex align-items-stretch">
-                  <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-money"></i>
-                    <h4>We aim to improve our service continuously </h4>
-                    <p></p>
+                  <div class="flip-card-back icon-box">
+                    <div class="text">
+                      <p>Our primary goal is to create and nurture long-term, meaningful relationships
+                        with our clients, built on trust, mutual respect,
+                        and a commitment to providing exceptional service throughout their journey with us.</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div><!-- End .content-->
+              <!-- flip card end -->
+
+              <!-- flip card start -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front icon-box">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Provide high quality services</h4>
+                  </div>
+                  <div class="flip-card-back icon-box">
+                    <div class="text">
+                      <p>We strive to go above and beyond to consistently deliver top-notch products
+                        and services, tailored to meet the unique needs and preferences of each customer,
+                        ensuring that we not only achieve but exceed their expectations,
+                        ultimately leading to complete customer satisfaction.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- flip card end -->
+
+              <!-- flip card start -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front icon-box">
+                    <i class="bx bx-money"></i>
+                    <h4>We aim to improve our service continuously</h4>
+                  </div>
+                  <div class="flip-card-back icon-box">
+                    <div class="text">
+                      <p>As an organization committed to excellence and constantly striving for customer satisfaction,
+                        we aim to improve our service continuously by diligently analyzing customer feedback,
+                        diligently monitoring industry trends, investing in the latest technology,
+                        regularly training our dedicated staff, and consistently reevaluating our internal processes
+                        to identify areas of enhancement.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- flip card end -->
+
+            </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End Why Us Section -->
+    </section>
+    <!-- End Why Us Section -->
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts section-bg">

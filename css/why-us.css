@@ -1,0 +1,153 @@
+body{
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap; /* This prevents wrapping of cards to the next line */
+    margin: -15px; /* To create space between cards */
+}
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.flip-main{
+    min-height: 50vh;
+    padding: 100px 0;
+}
+.flip-main .flip-card{
+    min-height: 50vh;
+    flex: 0 0 calc(25% - 30px); /* For four cards in a single row, each card should occupy 25% width */
+    margin: 0 15px; /* Adjust margin between cards */
+    perspective: 1000px; /*remove this if you dont want the 3d effect*/
+}
+.flip-main .flip-card-inner{
+    min-height: 50vh;
+    box-shadow: 0 0 10px #a9b3d6;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+.flip-main .flip-card-front img{
+    width: 100%;
+}
+.flip-card-front.icon-box {
+    text-align: center;
+    background: #fff;
+    padding: 40px 30px;
+    width: 100%;
+    border: 1px solid #eef0ef;
+}
+.flip-card-front.icon-box i {
+    font-size: 32px;
+    padding: 18px;
+    color: #5fcf80;
+    margin-bottom: 30px;
+    background: #ecf9f0;
+    border-radius: 50px;
+}
+.flip-card-front.icon-box h4 {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+.flip-card-back.icon-box .text p {
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+
+.flip-card-front.icon-box{
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 40px 30px;
+
+}
+
+.flip-card-back .text .more-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 30px 8px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+}
+.flip-card-back .text .more-btn i {
+    font-size: 14px;
+}
+.flip-card-back .text .more-btn:hover {
+    color: #5fcf80;
+    background: #fff;
+}
+
+.flip-card-front {
+    padding: 30px;
+    background: dodgerblue;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.flip-card-front h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.flip-card-front p {
+    margin-bottom: 30px;
+}
+
+.flip-main .flip-card-front,
+.flip-main .flip-card-back{
+    backface-visibility: hidden;
+}
+.flip-main .flip-card-back{
+    background-color: #6e0ec5;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+.flip-main .flip-card-back h3{
+    font-size: 24px;
+    color: #ffffff;
+    margin:0 0 5px;
+}
+.flip-main .flip-card-back p{
+    font-size: 16px;
+    color: #e9e9e9;
+    margin:0;
+}
+.flip-main .flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+/*responsive*/
+@media(max-width: 991px){
+    .flip-main .flip-card {
+        flex: 0 0 calc(50% - 30px);
+        margin: 15px;
+    }
+}
+@media(max-width: 767px){
+    .flip-main .flip-card {
+        flex: 0 0 calc(100% - 30px);
+    }
+}
